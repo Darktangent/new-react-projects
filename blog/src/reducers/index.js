@@ -1,10 +1,13 @@
 import {combineReducers} from 'redux'
+import postsReducer from "./PostsReducer"
+import usersReducer from "./UsersReducer"
 
 
 
 export default combineReducers({
 
-  test:()=>10
+  posts:postsReducer,
+  users:usersReducer
 
 })
 
